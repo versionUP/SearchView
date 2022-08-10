@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/main_frag">
+
+    <fragment
+        android:id="@+id/main_frag"
+        android:name="com.example.prashanth.ui.MainFragment"
+        android:label="This is the page title"
+        tools:layout="@layout/main_fragment">
+
+        <action
+            android:id="@+id/main_to_detail"
+            app:destination="@id/detail_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_frag"
+        android:name="com.example.prashanth.ui.DetailFragment"
+        android:label="details page" />
+
+</navigation>
